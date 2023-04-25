@@ -1,0 +1,22 @@
+{
+    "family": "example-family",
+    "containerDefinitions": [
+      {
+        "name": "catpipeline",
+        "image": "836327875442.dkr.ecr.us-east-1.amazonaws.com/catpipeline:latest",
+        "essential": true,
+        "portMappings": [
+          {
+            "containerPort": 80
+          }
+        ]
+      }
+    ],
+    "requiresCompatibilities": ["FARGATE"],
+    "networkMode": "awsvpc",
+    "executionRoleArn": "arn:aws:iam::836327875442:role/arn:aws:iam::836327875442:role/ilyass-catpipeline-role",
+    "memory": "512",
+    "cpu": "256"
+  }
+  
+
