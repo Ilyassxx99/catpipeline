@@ -3,7 +3,7 @@ Resources:
   - TargetService:
       Type: AWS::ECS::Service
       Properties:
-        TaskDefinition: "arn:aws:ecs:us-east-1:836327875442:task-definition/catpipelinedemo:19"
+        TaskDefinition: "arn:aws:ecs:us-east-1:836327875442:task-definition/catpipelinedemo:21"
         LoadBalancerInfo:
           ContainerName: "catpipeline"
           ContainerPort: "80"
